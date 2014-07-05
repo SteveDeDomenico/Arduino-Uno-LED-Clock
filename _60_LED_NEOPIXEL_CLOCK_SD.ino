@@ -1,3 +1,11 @@
+/*******************************************************************
+This sketch has been written for an Arduino controlled LED clock with
+60 LEDs. Adafruit's Neopixels are used for both the hour hand and the minute/second hands.
+Feel free to use the code and modify accordingly. Let me know of any tweaks you have made so that I
+can modify my sketch as well!  Steve De Domenico 2014.
+*********************************************************************/
+
+
 #include <Wire.h>
 #include <Adafruit_NeoPixel.h> // Adafruit library for LED rings
 #include "RTClib.h"  // rtc library for clock
@@ -34,7 +42,7 @@ void setup()
   strip2.begin();
   strip1.show(); // Initialize all pixels to 'off'
   strip2.show(); // Initialize all pixels to 'off'
-//  rtc.adjust(DateTime(__DATE__,__TIME__)); // rtc collects system time on script load
+  //rtc.adjust(DateTime(__DATE__,__TIME__)); // rtc collects system time on script load
 }
 
 void loop() 
